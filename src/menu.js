@@ -122,4 +122,5 @@ spaghettiImg.onerror = () => {
 
 }
 
-export const menuPage = menu();
+const menuPage = { load: menu };
+export { menuPage };

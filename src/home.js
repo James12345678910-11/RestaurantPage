@@ -13,4 +13,4 @@ function home() {
 }
 
 
-export const homePage = home();
+export const homePage = { load: home };
