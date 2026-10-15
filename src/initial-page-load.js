@@ -41,6 +41,22 @@ function enableHomeBtn() {
   }
 }
 
+function activeBtn() {
+  const buttons = document.querySelectorAll("button");
+  buttons.forEach(button => {
+  button.addEventListener('click', () => {
+
+    // Remove active class from all buttons
+    buttons.forEach(btn => {
+      btn.classList.remove('active');
+    });
+
+    // Add active class to clicked button
+    button.classList.add('active');
+  });
+});
+}
+
   
   
 
@@ -51,4 +67,4 @@ function enableHomeBtn() {
 
 
 
-export { initialPage, enableHomeBtn, enableMenuBtn, enableContactBtn };
+export { initialPage, enableHomeBtn, enableMenuBtn, enableContactBtn, activeBtn };

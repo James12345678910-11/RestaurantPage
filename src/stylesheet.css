@@ -12,7 +12,7 @@ background-position: center;
   padding: 24px;
   box-sizing: border-box;
 
-  background-color: white;
+  background-color: rgba(155, 152, 172, 0.836);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -28,8 +28,10 @@ h1 {
 .menu-img {
   display: flex;
   align-items: center;
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  max-width: 15rem;
+  height: auto;
+  max-height: 15rem;
   object-fit: cover;
   margin-bottom: 1rem;
   margin-left: auto;
@@ -52,12 +54,39 @@ h3 {
   text-align: center;
 }
 
+button {
+  display: inline-flex;
+  padding: 0.75rem 1.25rem;
+  font-size: clamp(0.875rem, 1vw, 1.125rem);
+  font-family: 'Arial', sans-serif;
+  color: white;
+  text-align: center;
+  background-color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button.active {
+  background-color: white;
+  color: black;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  gap: clamp(1rem, 2vw, 2rem);
+  margin-bottom: 2rem;
+}
+
 flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
+  background-color: blue;
 }
 
 
